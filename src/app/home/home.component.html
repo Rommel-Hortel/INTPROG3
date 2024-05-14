@@ -1,0 +1,212 @@
+﻿<div class="container">
+        <h1 style="text-align: center; font-size: 24px; font-weight: bold;">PET ADOPTION</h1></div>
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <title>Bootstrap Example</title>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        </head>
+        <body>
+        
+        <div class="container"> 
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+        
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="../assets/images/pic1.jpg" alt="Los Angeles" style="width:100%;">
+              </div>
+        
+              <div class="item">
+                <img src="../assets/images/pic3.jpg" alt="Chicago" style="width:100%;">
+              </div>
+            
+              <div class="item">
+                <img src="../assets/images/pic4.jpg" alt="New york" style="width:100%;">
+              </div>
+            </div>
+        
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+          </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Pet Adoption</title>
+            <style>
+                
+                .container {
+                    text-align: center;
+                    padding: 20px;
+                }
+                #search-input {
+                    width: 300px;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    text-align: left;
+                }
+                .pet-item {
+                    margin: 20px;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    background-color: #f9f9f9;
+                }
+        
+                #submit-btn {
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    background-color: #f9f9f9;
+                    cursor: pointer;
+                }
+        
+                .search-container {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    background-color: gray;
+                    padding: 20px;
+                    font-size: 16px;
+                  font-weight: bold;
+                }
+        
+                .pet-list {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-gap: 20px;
+                    font-size: 16px;
+                  font-weight: bold;
+                }
+        
+                .pet-item img {
+                    max-width: 100%;
+                    height: auto;
+                    
+                }
+
+                .img-label{
+
+                  display:block;
+                  margin-top: 5px;
+                  font-size: 0.9rem;
+                 
+                }
+
+                .pet-item span {
+                display: block;
+               margin-top: 10px;
+              font-size: 1.2rem;
+              color: #000000;
+               
+            }
+
+            .pet-image {
+             width: 200px;
+            height: 200px;
+          }
+
+
+                .flex-container {
+                  font-size: 16px;
+                  font-weight: bold;
+                  display: flex;
+                  justify-content: center; /* Center horizontally */
+                  align-items: center;     /* Center vertically */
+                  height: 100%;            /* Full height of the parent container */
+                  padding: 10px;           /* Optional: Padding for spacing */
+                  background-color: rgba(0, 0, 0, 0.1); /* Optional: Background for visibility */
+               }
+
+                  .img-label {
+                    display: block;
+                    margin-top: 5px;
+                    font-size: 0.9rem;
+                    color: #070707;
+                  }
+
+
+        
+            </style>
+        </head>
+        <body>
+        
+        <div class="container">
+            <h1>PET PROFILES</h1>
+        
+            <div class="search-container">   
+                <input type="text" id="search-input" placeholder="Search for pets...">
+                <input type="submit" value="Search" id="submit-btn">
+            </div>
+            
+            <div id="pet-list" class="pet-list">
+                <div class="pet-item">
+                    <img src="../assets/images/nemoo.jpg" alt="fish"width="200" height="200" class="pet-image">
+                    <span style="font-size: 24px; font-weight: bold;">FISHTEA</span>
+                    
+                </div>
+                <div class="pet-item">
+                    <img src="../assets/images/dogsss.jpg" alt="Dog" width="200" height="150" class="pet-image">
+                    <span style="font-size: 24px; font-weight: bold;">SIBERIAN CANDOG</span>
+                    
+                </div>
+                <div class="pet-item" >
+                    <img src="../assets/images/catsss.jpg" alt="Cat" width="200" height="200" class="pet-image">
+                    <span style="font-size: 24px; font-weight: bold;">IRING NI DIABLO</span>
+                  
+                </div>
+            </div>
+        
+            <input type="submit" value="MO PILI KA OR MO PILI KA?" id="submit-btn" style="font-weight: bold;">
+        
+            <script>
+                document.getElementById('search-input').addEventListener('keyup', function() {
+                    const filter = this.value.toLowerCase();
+                    const list = document.getElementById('pet-list');
+                    const items = list.querySelectorAll('.pet-item');
+        
+                    items.forEach(function(item) {
+                        const text = item.textContent.toLowerCase();
+                        if(text.includes(filter)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            </script>
+        
+        
+    
+        

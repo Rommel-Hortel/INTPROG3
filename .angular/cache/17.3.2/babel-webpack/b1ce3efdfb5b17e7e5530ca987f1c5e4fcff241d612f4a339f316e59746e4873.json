@@ -1,0 +1,1 @@
+{"ast":null,"code":"styleUrls: ['./style.css'];\nexport class DetailsComponent {\n  constructor(accountService) {\n    this.accountService = accountService;\n    this.account = this.accountService.accountValue;\n  }\n}","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
